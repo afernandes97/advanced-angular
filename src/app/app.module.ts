@@ -1,3 +1,5 @@
+import { CategoryListComponent } from './pages/categories/category-list/category-list.component';
+import { CategoryFormComponent } from './pages/categories/category-form/category-form.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -6,7 +8,9 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CategoryFormComponent,
+    CategoryListComponent
   ],
   imports: [
     BrowserModule,
