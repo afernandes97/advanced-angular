@@ -11,6 +11,12 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { InMemoryDatabase } from "./in-memory-database";
 
+import { ReactiveFormsModule, FormBuilder } from "@angular/forms";
+
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,10 @@ import { InMemoryDatabase } from "./in-memory-database";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDatabase)
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDatabase),
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(), // ToastrModule added
   ],
   providers: [],
   bootstrap: [AppComponent]

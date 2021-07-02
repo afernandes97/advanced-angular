@@ -31,7 +31,7 @@ export class CategoryService {
   }
 
   //GETBYID
-  getById(id: number): Observable<Category>{
+  getById(id: any): Observable<Category>{
     const url = `${this.apiPath}/${id}`;
     
     return this.http.get(url).pipe(
